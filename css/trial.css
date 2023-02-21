@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  position:relative; 
+  min-height: 100%;
+}
+
+nav{
+    font-size: 130%;
+}
+nav a{
+    color: white;
+    font-size: 140%;
+}
+
+nav a:hover{
+    color: white;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color: white;
+    
+}
+
+footer {
+    background-color: #ad8257;
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
